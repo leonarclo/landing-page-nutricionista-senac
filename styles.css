@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Header */
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.header .btn {
+  background: #fff;
+  color: #4caf50;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.header .btn:hover {
+  background: #ccc;
+}
+
+.header .container p {
+  margin-bottom: 24px;
+}
+
+#contato {
+  margin-top: 16px;
+}
+
+/* Sobre Mim */
+.sobre {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+
+.sobre-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Serviços */
+.servicos {
+  padding: 50px 0;
+}
+
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.servico-item {
+  flex: 1 1 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.servico-item:hover {
+  background: #f1f1f1;
+}
+
+/* Benefícios */
+.beneficios {
+  padding: 50px 0;
+  background: #e8f5e9;
+}
+
+.beneficios ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Contato */
+.contato {
+  padding: 50px 0;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-contato .btn {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-contato .btn:hover {
+  background: #45a049;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .servicos-grid {
+    flex-direction: column;
+  }
+}
